@@ -11,6 +11,9 @@
 		7C5FBAF82AFB453400E21D0E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5FBAF72AFB453400E21D0E /* ContentView.swift */; };
 		7C5FBAFA2AFB453700E21D0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C5FBAF92AFB453700E21D0E /* Assets.xcassets */; };
 		7C5FBAFD2AFB453700E21D0E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C5FBAFC2AFB453700E21D0E /* Preview Assets.xcassets */; };
+		7C5FBB042AFCA00100E21D0E /* UIColor+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5FBB032AFCA00100E21D0E /* UIColor+Extention.swift */; };
+		7C5FBB072AFCA2F400E21D0E /* YSDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C5FBB052AFCA2F400E21D0E /* YSDisplay-Bold.ttf */; };
+		7C5FBB082AFCA2F400E21D0E /* YSDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C5FBB062AFCA2F400E21D0E /* YSDisplay-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,10 @@
 		7C5FBAF72AFB453400E21D0E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7C5FBAF92AFB453700E21D0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C5FBAFC2AFB453700E21D0E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7C5FBB032AFCA00100E21D0E /* UIColor+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extention.swift"; sourceTree = "<group>"; };
+		7C5FBB052AFCA2F400E21D0E /* YSDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YSDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		7C5FBB062AFCA2F400E21D0E /* YSDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YSDisplay-Medium.ttf"; sourceTree = "<group>"; };
+		7C5FBB092AFCA3EE00E21D0E /* swift-ui-learning-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "swift-ui-learning-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +58,13 @@
 		7C5FBAF42AFB453400E21D0E /* swift_ui_learning */ = {
 			isa = PBXGroup;
 			children = (
+				7C5FBB092AFCA3EE00E21D0E /* swift-ui-learning-Info.plist */,
 				7C5FBAF52AFB453400E21D0E /* swift_ui_learningApp.swift */,
+				7C5FBB032AFCA00100E21D0E /* UIColor+Extention.swift */,
 				7C5FBAF72AFB453400E21D0E /* ContentView.swift */,
 				7C5FBAF92AFB453700E21D0E /* Assets.xcassets */,
+				7C5FBB052AFCA2F400E21D0E /* YSDisplay-Bold.ttf */,
+				7C5FBB062AFCA2F400E21D0E /* YSDisplay-Medium.ttf */,
 				7C5FBAFB2AFB453700E21D0E /* Preview Content */,
 			);
 			path = swift_ui_learning;
@@ -126,6 +137,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C5FBAFD2AFB453700E21D0E /* Preview Assets.xcassets in Resources */,
+				7C5FBB082AFCA2F400E21D0E /* YSDisplay-Medium.ttf in Resources */,
+				7C5FBB072AFCA2F400E21D0E /* YSDisplay-Bold.ttf in Resources */,
 				7C5FBAFA2AFB453700E21D0E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C5FBB042AFCA00100E21D0E /* UIColor+Extention.swift in Sources */,
 				7C5FBAF82AFB453400E21D0E /* ContentView.swift in Sources */,
 				7C5FBAF62AFB453400E21D0E /* swift_ui_learningApp.swift in Sources */,
 			);
@@ -270,6 +284,7 @@
 				DEVELOPMENT_TEAM = WTG2YTFRGL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "swift-ui-learning-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +314,7 @@
 				DEVELOPMENT_TEAM = WTG2YTFRGL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "swift-ui-learning-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

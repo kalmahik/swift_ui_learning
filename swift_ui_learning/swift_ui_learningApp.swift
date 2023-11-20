@@ -1,10 +1,3 @@
-//
-//  swift_ui_learningApp.swift
-//  swift_ui_learning
-//
-//  Created by Murad Azimov on 08.11.2023.
-//
-
 import SwiftUI
 
 @main

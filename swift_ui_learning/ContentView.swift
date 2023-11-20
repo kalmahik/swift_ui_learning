@@ -1,21 +1,52 @@
-//
-//  ContentView.swift
-//  swift_ui_learning
-//
-//  Created by Murad Azimov on 08.11.2023.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    fileprivate func extractedFunc(text: String, size: CGFloat = 20) -> Text {
+        return Text(text)
+            .font(.custom("YSDisplay-Medium", size: size))
+            .foregroundColor(Color(UIColor.white))
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            Color(UIColor.black).ignoresSafeArea()
+            VStack {
+                HStack {
+                    extractedFunc(text: "Вопрос")
+                    Spacer()
+                    extractedFunc(text: "1/10")
+                }.border(.green)
+                Image(systemName: "")
+                    .background(Color(UIColor.gray))
+                    .aspectRatio(2/3, contentMode: .fill)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .cornerRadius(20)
+                    .border(.green)
+                extractedFunc(text: "Вопрос", size: 23)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color(UIColor.white))
+                HStack {
+                    Button("Да") {
+                    }
+                    .font(.custom("YSDisplay-Medium", size: 20))
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Color(UIColor.gray))
+                    .cornerRadius(15)
+                    .foregroundColor(Color(UIColor.ypBlack))
+
+                    Button("Нет") {
+                    }
+                    .font(.custom("YSDisplay-Medium", size: 20))
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Color(UIColor.gray))
+                    .cornerRadius(15)
+                    .foregroundColor(Color(UIColor.ypBlack))
+
+                }
+                .frame(height: 60)
+            }
+            .padding(20)
         }
-        .padding()
     }
 }
 
